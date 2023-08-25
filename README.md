@@ -1,1 +1,0 @@
-# thenam2kx.github.io
