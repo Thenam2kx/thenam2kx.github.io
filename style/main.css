@@ -1,0 +1,128 @@
+.size, .banner .listStyle, .banner {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: auto;
+  width: 100%;
+}
+
+.banner .listStyle img {
+  height: 100%;
+  width: 100%;
+}
+
+.main-content {
+  height: auto;
+  width: 100%;
+  padding: 20px 0;
+}
+.main-content .introduce {
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.main-content .introduce .introduce-web {
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.main-content .introduce .introduce-web h2 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.main-content .introduce .introduce-web .intro-content {
+  height: auto;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: left;
+}
+.main-content .introduce .introduce-web .intro-content .img {
+  height: auto;
+  width: auto;
+  padding-right: 20px;
+}
+.main-content .introduce .introduce-web .intro-content .img img {
+  height: 500px;
+  width: fit-content;
+}
+.main-content .introduce .introduce-web .intro-content .intro-text {
+  height: auto;
+  width: auto;
+}
+.main-content .introduce .introduce-web .intro-content .intro-text ul li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+.main-content .introduce .introduce-web .intro-content .intro-text ul li h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.main-content .introduce .introduce-web .intro-content .intro-text ul li p {
+  font-size: 15px;
+  padding: 10px 0;
+  line-height: 24px;
+}
+.main-content .introduce .introduce-web .intro-content .intro-text ul li p span {
+  font-weight: bold;
+}
+.main-content .introduce .introduce-web .intro-content .intro-text ul li p .list-child {
+  list-style-type: square;
+}
+.main-content .service {
+  height: auto;
+  width: 100%;
+  background-color: #2489db;
+  padding-top: 20px;
+}
+.main-content .service .service-Web {
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-content .service .service-Web h2 {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  text-decoration: underline;
+}
+.main-content .service .service-Web .serviceList ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.main-content .service .service-Web .serviceList ul li {
+  height: auto;
+  width: 400px;
+  list-style: none;
+  padding: 20px 10px;
+  text-align: left;
+}
+.main-content .service .service-Web .serviceList ul li .secrvice-title {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 10px 0;
+}
+.main-content .service .service-Web .serviceList ul li .secrvice-title img {
+  height: 22px;
+  width: 22px;
+}
+.main-content .service .service-Web .serviceList ul li .secrvice-title h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  padding-left: 10px;
+}
+.main-content .service .service-Web .serviceList ul li p {
+  color: antiquewhite;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */

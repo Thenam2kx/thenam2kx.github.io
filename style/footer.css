@@ -1,0 +1,61 @@
+footer {
+  height: auto;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: #2489db;
+}
+
+.content {
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-main {
+  height: 100%;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-main section {
+  padding-top: 20px;
+}
+.footer-main section h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.footer-main section ul {
+  padding: 20px 0;
+}
+.footer-main section ul li {
+  list-style: none;
+  padding: 5px 0;
+  color: rgb(186, 186, 186);
+  font-size: 16px;
+  transition: all ease 0.2s;
+}
+.footer-main section ul li i {
+  padding-right: 10px;
+}
+.footer-main section ul li a {
+  color: unset;
+  text-decoration: none;
+}
+.footer-main section ul :hover {
+  text-decoration: underline;
+  color: #2489db;
+  cursor: pointer;
+}
+
+.footer_copyright {
+  height: auto;
+  width: 100%;
+  border-top: 1px solid #0a5a9c;
+}
+.footer_copyright .content {
+  padding: 20px 0;
+  color: #0a5a9c;
+}
+
+/*# sourceMappingURL=footer.css.map */

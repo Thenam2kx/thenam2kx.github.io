@@ -1,0 +1,71 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+}
+
+.head_content {
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+.logo a {
+  text-decoration: none;
+}
+.logo a img {
+  height: 100%;
+  width: auto;
+}
+
+menu {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+menu ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+menu ul li {
+  height: auto;
+  width: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all ease 0.2s;
+  position: relative;
+}
+menu ul ::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #2489db;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transition: all ease 0.2s;
+}
+menu ul :hover {
+  color: #2489db;
+  cursor: pointer;
+}
+menu ul :hover::after {
+  width: 100%;
+}
+
+/*# sourceMappingURL=header.css.map */

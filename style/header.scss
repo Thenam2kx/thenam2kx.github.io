@@ -1,0 +1,84 @@
+$header: 60px;
+$colorHeader: #2489db;
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header{
+    height: $header;
+    width: 100%;
+}
+.head_content{
+    height: 100%;
+    width: 1200px;
+
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 100%;
+    width: auto;
+
+    a{
+        text-decoration: none;
+
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+menu{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+
+    ul{
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        
+        li{
+            height: auto;
+            width: auto;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all ease .2s;
+            position: relative;
+            
+        }
+
+        ::after{
+            content: "";
+            height: 2px;
+            width: 0;
+            background-color: $colorHeader;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            transition: all ease .2s;
+        }
+
+        :hover{
+            color: #2489db;
+            cursor: pointer;
+        }
+
+        :hover::after{
+            width: 100%;
+        }
+
+
+
+    }
+}
