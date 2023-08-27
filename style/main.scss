@@ -28,15 +28,13 @@ main{
     .introduce{
         height: auto;
         width: 100%;
-        // background-color: black;
         margin-bottom: 20px;
 
         .introduce-web{
             height: 100%;
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px 0;
-            // background-color: #2489db;
             
             h2{
                 text-align: center;
@@ -110,7 +108,7 @@ main{
         background-color: #2489db;
         .contact-web{
             height: auto;
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px 0;
 
@@ -127,6 +125,7 @@ main{
                 height: 100%;
                 width: 100%;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 color: white;
 
@@ -200,7 +199,7 @@ main{
 
         .service-Web{
             height: 100%;
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
     
             h2{

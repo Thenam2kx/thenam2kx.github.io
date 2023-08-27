@@ -25,7 +25,7 @@ main {
 }
 .main-content .introduce .introduce-web {
   height: 100%;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -83,7 +83,7 @@ main {
 }
 .main-content .contact .contact-web {
   height: auto;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -99,6 +99,7 @@ main {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   color: white;
 }
@@ -156,7 +157,7 @@ main {
 }
 .main-content .service .service-Web {
   height: 100%;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .main-content .service .service-Web h2 {

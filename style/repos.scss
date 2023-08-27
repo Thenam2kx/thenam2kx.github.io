@@ -51,6 +51,7 @@
                         padding: 20px;
                         background-color: #2489db;
                         color: white;
+                        transition: all ease .2s;
 
                         li{
                             list-style: none;
@@ -92,5 +93,16 @@
         }
     }
 
+
     // main content responsive
+    .introduce{
+        .introduce-web{
+            height: auto;
+            width: auto;
+
+            .intro-content{
+                display: block;
+            }
+        }
+    }
 }
