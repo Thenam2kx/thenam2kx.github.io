@@ -4,9 +4,14 @@ var currentIndex = 0;
 function changeSlide(){
     
     var listSlide = [
-        "image/ListBanner/Slide-3.png",
-        "image/ListBanner/Slide4.png",
-        "image/ListBanner/Slide-5.png"
+        "image/ListBanner/Banner-website-2.png",
+        "image/ListBanner/Banner-website-3.png",
+        "image/ListBanner/Banner-website-4.png",
+        "image/ListBanner/Banner-website-5.png",
+        "image/ListBanner/Banner-website-6.png",
+        "image/ListBanner/Banner-website-7.png",
+        "image/ListBanner/Banner-website-8.png",
+        "image/ListBanner/Banner-website-9.png",
     ];
 
     slideShow.src = listSlide[currentIndex];
