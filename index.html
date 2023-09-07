@@ -9,139 +9,122 @@
         <link rel="stylesheet" href="./style/style.css">
     </head>
     <body>
-        <header>
-            <div class="head_content">
-
-                <!-- logo -->
-                <div class="logo">
-                    <a href="">
-                        <img src="./image/logo2.png" alt="LOGO">
-                    </a>
+        <header class="header">
+            <section class="header__content">
+                <div class="header__content--logo">
+                    <img src="./image/presonal_logo.png" alt="">
                 </div>
 
-                <!-- menu -->
-                <menu>
-                    <ul>
-                        <li>Trang chủ</li>
-
-                        <li class="listMenu">
-                            Kho giao diện
-                            <i class='bx bx-caret-down'></i>
+                <menu class="header__content--menu">
+                    <ul class="header__content--menu--ul">
+                        <li>
+                            <div class="text">Trang chủ</div>
                         </li>
 
                         <li>
-                            Dịch vụ
-                            <i class='bx bx-caret-down'></i>
+                            <div class="text">Giới thiệu</div>
                         </li>
 
-                        <li>Kiến thức chung</li>
+                        <li class="dropDown">
+                            <div class="text">Kho giao diện <i class='bx bx-caret-down'></i></div>
 
-                        <li>Giới thiệu</li>
+                            <section class="dropDown__list">
+                                <div class="dropDown__list--items">KHO GIAO DIỆN 1</div>
+                                <div class="dropDown__list--items">KHO GIAO DIỆN 1</div>
+                                <div class="dropDown__list--items">KHO GIAO DIỆN 1</div>
+                                <div class="dropDown__list--items">KHO GIAO DIỆN 1</div>
+                                <div class="dropDown__list--items">KHO GIAO DIỆN 1</div>
+                            </section>
+                        </li>
 
-                        <Li>Liên hệ</Li>
+                        <li class="dropDown">
+                            <div class="text">Dịch vụ <i class='bx bx-caret-down'></i></div>
+                            <section class="dropDown__list">
+                                <div class="dropDown__list--items">KHO GIAO DIỆN 2</div>
+                                <div class="dropDown__list--items">KHO GIAO DIỆN 2</div>
+                                <div class="dropDown__list--items">KHO GIAO DIỆN 2</div>
+                                <div class="dropDown__list--items">KHO GIAO DIỆN 2</div>
+                                <div class="dropDown__list--items">KHO GIAO DIỆN 2</div>
+                            </section>
+                        </li>
+
+                        <li><div class="text">Kiến thức chung</div></li>
+
+                        <li><div class="text">Liên hệ</div></li>
+
                     </ul>
                 </menu>
-            </div>
+            </section>
         </header>
 
-        <section class="head-repo">
-            <div class="head-repo-content">
-                 <div class="logo">
-                    <img src="./image/presonal_logo.png" alt="logo">
-                 </div>
 
-                 <div class="menu">
-                    <div class="menu-icon">
-                        <i class='bx bx-menu'></i>
+        <main class="main">
+            <section class="main__banner">
+                <img src="./image/ListBanner/Banner-website-1.png" alt="BANNER" class="slideShow">
+            </section>
 
-                        <ul>
-                            <div class="close-menu">
-                                <i class='bx bx-window-close'></i>
-                                Đóng menu
-                            </div>
-                            <li>Trang chủ</li>
-                            <li>Giới thiệu</li>
-                            <li>Kho dao diện webstie</li>
-                            <li>Dịch vụ</li>
-                            <li>Liên hệ</li>
-                        </ul>
-                    </div>
-                    
-                 </div>
-            </div>
-        </section>
+            <article class="main__content grid">
 
-        <main>
-            <div class="banner">
-                <div class="listStyle">
-                    <img src="./image/ListBanner/Banner-website-1.png" alt="" class="slideShow">
-                </div>
-            </div>
+                <!-- introduce website -->
+                <section class="main__content__aboutMe grid wide">
+                    <h2>GIỚI THIỆU VỀ CÔNG TY CHÚNG TÔI</h2>
+                    <section class="main__content__aboutMe--infor row">
+                        <section class="main__content__aboutMe--infor--img col l-4">
+                            <img src="./image/my-img.png" alt="">
+                        </section>
+                        
+                        <section class="main__content__aboutMe--infor--text col l-8">
+                            <ul>
+                                <li>
+                                    <h4>Sứ mệnh</h4>
+                                    <P>
+                                        <span>FDESOFTWARE</span> cam kết chất lượng thiết kế website chuyên nghiệp, hấp dẫn, 
+                                        mang lại lợi ích cho khách hàng, giúp các các đơn vị, 
+                                        doanh nghiệp thu hút khách hàng, truyền thông hiệu quả. 
+                                        Từ đó nâng cao thương hiệu và định vị doanh nghiệp trong lòng khách hàng của bạn.</br>
+                                        <span>FDESOFTWARE</span> không ngừng cập nhật các công nghệ, 
+                                        kỹ thuật cùng các kiến thức mới nhằm nâng cao hiệu quả, 
+                                        đóng góp cho sự phát triển của doanh nghiệp đối tác và sự phát triển của xã hội.
+                                    </P>
+                                </li>
 
-            <article class="main-content">
+                                <li>
+                                    <h4>Tầm nhìn</h4>
+                                    <P>
+                                        Nhận thấy sự phát triển của công nghệ hiện nay cũng như xu hướng phát triển trong tương lai, 
+                                        cùng những điều kiện sẵn có, chúng tôi đang ngày càng nỗ lực mở rộng 
+                                        và không ngừng thay đổi để phù hợp với sự phát triển của xã hội.
+                                        Trong thời đại công nghệ thông tin ngày càng lớn mạnh, 
+                                        các dịch vụ trên không gian mạng được rất nhiều khách hàng chú trọng, 
+                                        tìm hiểu. <span>FDESOFTWARE</span> sẽ nỗ lực trở thành đơn vị số 1 về cung cấp dịch vụ website, 
+                                        thiết kế website chuyên nghiệp hiệu quả, hướng đến lợi ích tối đa cho khách hàng.
+                                    </P>
+                                </li>
 
-                <!-- introduce -->
-                <section class="introduce">
-                    <div class="introduce-web">
-                        <h2>Giới thiệu về công ty chúng tôi</h2>
-                        <div class="intro-content">
-                            <div class="img">
-                                <img src="./image/my-img.png" alt="">
-                            </div>
-                            
-                            <div class="intro-text">
-                                <ul>
-                                    <li>
-                                        <h4>Sứ mệnh</h4>
-                                        <P>
-                                            <span>FDESOFTWARE</span> cam kết chất lượng thiết kế website chuyên nghiệp, hấp dẫn, 
-                                            mang lại lợi ích cho khách hàng, giúp các các đơn vị, 
-                                            doanh nghiệp thu hút khách hàng, truyền thông hiệu quả. 
-                                            Từ đó nâng cao thương hiệu và định vị doanh nghiệp trong lòng khách hàng của bạn.</br>
-                                            <span>FDESOFTWARE</span> không ngừng cập nhật các công nghệ, 
-                                            kỹ thuật cùng các kiến thức mới nhằm nâng cao hiệu quả, 
-                                            đóng góp cho sự phát triển của doanh nghiệp đối tác và sự phát triển của xã hội.
-                                        </P>
-                                    </li>
-
-                                    <li>
-                                        <h4>Tầm nhìn</h4>
-                                        <P>
-                                            Nhận thấy sự phát triển của công nghệ hiện nay cũng như xu hướng phát triển trong tương lai, 
-                                            cùng những điều kiện sẵn có, chúng tôi đang ngày càng nỗ lực mở rộng 
-                                            và không ngừng thay đổi để phù hợp với sự phát triển của xã hội.
-                                            Trong thời đại công nghệ thông tin ngày càng lớn mạnh, 
-                                            các dịch vụ trên không gian mạng được rất nhiều khách hàng chú trọng, 
-                                            tìm hiểu. <span>FDESOFTWARE</span> sẽ nỗ lực trở thành đơn vị số 1 về cung cấp dịch vụ website, 
-                                            thiết kế website chuyên nghiệp hiệu quả, hướng đến lợi ích tối đa cho khách hàng.
-                                        </P>
-                                    </li>
-
-                                    <li>
-                                        <h4>Các dịch vụ được Rao Thuê cung cấp hiện nay</h4>
-                                        <P>
-                                           <ul>
-                                            <li>Thiết kế website chuyên nghiệp với giao diện thu hút, phù hợp từng ngành nghề kinh doanh, thiết kế website bán hàng, thiết kế website doanh nghiệp, thiết kế website tin tức, thiết kế website cá nhân…</li>
-                                            <li>Thực hiện tối ưu website phù hợp với người dùng trên mọi thiết bị</li>
-                                            <li>Cung cấp dịch vụ Hosting lưu trữ dữ liệu website chất lượng</li>
-                                            <li>Dịch vụ SEO website, tăng sự phát triển và duy trì thứ hạng website</li>
-                                            <li>Dịch vụ cung cấp Tên miền.</li>
-                                           </ul>
-                                        </P>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                                <li>
+                                    <h4>Các dịch vụ được FDESORTWARE cung cấp hiện nay</h4>
+                                    <P>
+                                       <ul>
+                                        <li>Thiết kế website chuyên nghiệp với giao diện thu hút, phù hợp từng ngành nghề kinh doanh, thiết kế website bán hàng, thiết kế website doanh nghiệp, thiết kế website tin tức, thiết kế website cá nhân…</li>
+                                        <li>Thực hiện tối ưu website phù hợp với người dùng trên mọi thiết bị</li>
+                                        <li>Cung cấp dịch vụ Hosting lưu trữ dữ liệu website chất lượng</li>
+                                        <li>Dịch vụ SEO website, tăng sự phát triển và duy trì thứ hạng website</li>
+                                        <li>Dịch vụ cung cấp Tên miền.</li>
+                                       </ul>
+                                    </P>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
                 </section>
 
                 <!-- contact website -->
-                <section class="contact">
-                    <div class="contact-web">
+                <section class="main__content__contact grid">
+                    <section class="main__content__contact grid wide">
                         <h2>Liên hệ ngay với chúng tôi</h2>
-                        <div class="contact-content">
+                        <div class="main__content__contact--infor row">
 
-                            <section class="cont-1">
+                            <section class="main__content__contact--infor--cont-1 col l-6">
                                 <h3>THÔNG TIN VỀ CHÚNG TÔI</h3>
                                 <ul>
                                     <li>
@@ -167,25 +150,25 @@
                                 </ul>
                             </section>
 
-                            <section class="cont-2">
+                            <section class="main__content__contact--infor--cont-2 col l-6">
                                 <form action="">
-                                    <div class="name">
+                                    <div class="name formInput">
                                         <h4>Họ và tên</h4>
                                         <input type="text" placeholder="Họ">
                                         <input type="text" placeholder="Tên">
                                     </div>
 
-                                    <div class="numberPhone">
+                                    <div class="numberPhone formInput">
                                         <h4>Số điện thoại</h4>
                                         <input type="number" placeholder="Số điện thoại">
                                     </div>
 
-                                    <div class="email">
+                                    <div class="email formInput">
                                         <h4>Email</h4>
                                         <input type="email" placeholder="Email">
                                     </div>
 
-                                    <div class="cntent">
+                                    <div class="cntent formInput">
                                         <h4>Nội dung</h4>
                                         <input type="text" placeholder="Nhập nội dung">
                                     </div>
@@ -194,16 +177,18 @@
                                 </form>
                             </section>
                         </div>
-                    </div>
+                    </section>
+
+                        
                 </section>
 
                 <!-- service webstie -->
-                <section class="service">
-                    <div class="service-Web">
+                <section class="main__content__service grid">
+                    <section class="main__content__service--Web grid wide">
                         <h2>Dịch vụ website</h2>
-                        <div class="serviceList">
-                            <ul>
-                                <li>
+                        <div class="main__content__service--Web--serviceList wide">
+                            <ul class="row">
+                                <li class="col l-4">
                                     <div class="secrvice-title">
                                         <img src="./image/icon/icon-sercive/icon-1.png" alt="">
                                         <h3>Bài viết chuẩn SEO</h3>
@@ -211,16 +196,15 @@
                                     <p>FDESOFTWARE - Group luôn tự tin rằng mình có những người am hiểu digital marketing để tạo ra những bài viết chất lượng</p>
                                 </li>
     
-                                <li>
+                                <li class="col l-4">
                                     <div class="secrvice-title">
                                         <img src="./image/icon/icon-sercive/icon-2.png" alt="">
                                         <h3>Chăm sóc - quản trị Website</h3>
                                     </div>
                                     <p>FDESOFTWARE tự hào sẽ mang đến cho khách hàng một website Chuyên nghiệp -Toàn diện</p>
                                 </li>
-    
-    
-                                <li>
+        
+                                <li class="col l-4">
                                     <div class="secrvice-title">
                                         <img src="./image/icon/icon-sercive/icon-3.png" alt="">
                                         <h3>Dịch vụ tên miền</h3>
@@ -228,15 +212,15 @@
                                     <p>FDESOFTWARE - Group là đại lý cung cấp Tên miền cấp cao với đội ngũ nhân viên nhiệt tình, chu đáo.</p>
                                 </li>
     
-                                <li>
+                                <li class="col l-4">
                                     <div class="secrvice-title">
                                         <img src="./image/icon/icon-sercive/icon-4.png" alt="">
                                         <h3>Email doanh nghiệp</h3>
                                     </div>
                                     <p>Email marketing là dịch vụ quảng bá sản phẩm, dịch vụ chăm sóc khách hàng cũ và tìm kiếm khách hàng tiềm</p>
-                                </li>
+                                </li >
     
-                                <li>
+                                <li class="col l-4">
                                     <div class="secrvice-title">
                                         <img src="./image/icon/icon-sercive/icon-5.png" alt="">
                                         <h3>Hosting lưu trữ</h3>
@@ -244,7 +228,7 @@
                                     <p>Sử dụng ổ cứng SSD siêu tốc với tốc độ nhanh hơn gấp 4 lần so với ổ HDD thông thường</p>
                                 </li>
     
-                                <li>
+                                <li class="col l-4">
                                     <div class="secrvice-title">
                                         <img src="./image/icon/icon-sercive/icon-6.png" alt="">
                                         <h3>Quảng cáo google ADS</h3>
@@ -255,17 +239,19 @@
                                 
                             </ul>
                         </div>
-                    </div>
+                    </section>
                 </section>
-            </article>
 
+            </article>
         </main>
 
-        <footer>
-            <div class="content">
-                <article class="footer-main">
-                    <section>
-                        <h2>Công ty cổ phần đầu tư và phát triển</h2>
+
+
+        <footer class="footer grid">
+            <section class="footer__content grid wide">
+                <article class="footer__content--main row">
+                    <section class="footer__content--main--items col l4">
+                        <h2>Công ty cổ phần đầu tư & phát triển</h2>
                         <nav>
                             <ul>
                                 <li><i class='bx bx-map-pin'></i> Phương canh, Nam Từ Liêm, Hà Nội</li>
@@ -275,7 +261,7 @@
                         </nav>
                     </section>
         
-                    <section>
+                    <section class="footer__content--main--items col l-3">
                         <h2>Sản phẩm</h2>
                         <nav>
                             <ul>
@@ -289,7 +275,7 @@
                         </nav>
                     </section>
         
-                    <section>
+                    <section class="footer__content--main--items col l-3">
                         <h2>Về chúng tôi</h2>
                         <nav>
                             <ul>
@@ -302,7 +288,7 @@
                         </nav>
                     </section>
         
-                    <section>
+                    <section class="footer__content--main--items col l-2">
                         <h2>Liên hệ</h2>
                         <nav>
                             <ul>
@@ -315,11 +301,11 @@
                     </section>
                 </article>
 
-                <article class="footer_copyright">
+                <article class="footer__content--copyright">
                     <div class="content">Copyright © 2023 - Nền tảng quản lý và bán hàng đa kênh được sử dụng nhiều nhất Việt Nam</div>
                 </article>
                 
-            </div>
+            </section>
         </footer>
     <script src="./javascript/banner.js"></script>
     </body>

@@ -1,62 +1,56 @@
-footer{
-    height: auto;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    color: #2489db;
-}
-.content{
-    height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+$height-header: 60px;
+$color-primary: #2489db;  
+$color-white: #ffff;
+$color-black: #0000;
 
-}
-.footer-main{
-    height: 100%;
-    width: 100%;
+
+.footer{
+    background-color: black;
+    color: $color-white;
     padding: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
-    section{
-        padding-top: 20px;
-        h2{
-            font-size: 18px;
-            text-transform: uppercase;
+    &__content{
+
+        &--main{
+            padding-bottom: 20px;
+            &--items{
+
+                & > h2{
+                    color: $color-primary;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    padding: 20px 0;
+                }
+
+                & > nav{
+
+                    & > ul{
+
+                        & > li{
+                            list-style: none;
+                            line-height: 30px;
+                            transition: all ease .15s;
+
+                            & > a{
+                                text-decoration: none;
+                                color: unset;
+                            }
+
+                            &:hover{
+                                color: $color-primary;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
         }
-        ul{
+
+        &--copyright{
             padding: 20px 0;
-    
-            li{
-                list-style: none;
-                padding: 5px 0;
-                color: rgb(186, 186, 186);
-                font-size: 16px;
-                transition: all ease .2s;
-                i{
-                    padding-right: 10px;
-                }
-                a{
-                    color: unset;
-                    text-decoration: none;
-                }
-            }
-            :hover{
-                text-decoration: underline;
-                color: #2489db;
-                cursor: pointer;
-            }
+            border-top: 1px solid $color-primary;
+            color: $color-primary;
+            font-size: 14px;
         }
     }
-}
-
-.footer_copyright{
-    height: auto;
-    width: 100%;
-    border-top: 1px solid #0a5a9c;
-    
-    .content{
-        padding: 20px 0;
-        color: #0a5a9c;
-    }   
 }

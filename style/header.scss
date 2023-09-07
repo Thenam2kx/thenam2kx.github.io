@@ -1,84 +1,130 @@
-$header: 60px;
-$colorHeader: #2489db;
+// ================ abstracts ================ //
+// variables
+$height-header: 60px;
+$color-primary: #2489db;  
+$color-white: #ffff;
+$color-black: #0000;
 
-.flex{
+
+//  mixins
+@mixin flex($justify-content, $value){
     display: flex;
     align-items: center;
-    justify-content: center;
+    #{$justify-content}: $value;
 }
 
+@mixin transiton(){
+    transition: all ease .15s;
+}
 
-header{
-    height: $header;
+// ================ layout ================ //
+// header
+.header{
+    height: $height-header;
     width: 100%;
-}
-.head_content{
-    height: 100%;
-    max-width: 1200px;
+    background-color: $color-primary;
 
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-.logo{
-    height: 100%;
-    width: auto;
+    &__content{     
+        height: $height-header;
+        width: 1200px;
+        margin: 0 auto;
 
-    a{
-        text-decoration: none;
+        @include flex(justify-content, space-around);
 
-        img{
-            height: 100%;
-            width: auto;
-        }
-    }
-}
+        &--logo{
+            height: $height-header;
+            width: fit-content;
 
-menu{
-    height: 100%;
-    width: 100%;
-    font-size: 16px;
-
-    ul{
-        height: 100%;
-        width: 100%;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-        
-        li{
-            height: auto;
-            width: auto;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: all ease .2s;
-            position: relative;
-            
+            img{
+                height: 100%;
+                width: 100%;
+            }
         }
 
-        ::after{
-            content: "";
-            height: 2px;
-            width: 0;
-            background-color: $colorHeader;
-            position: absolute;
-            bottom: 0px;
-            left: 0;
-            transition: all ease .2s;
-        }
-
-        :hover{
-            color: #2489db;
-            cursor: pointer;
-        }
-
-        :hover::after{
+        &--menu{
+            height: $height-header;
             width: 100%;
+            & > ul{
+                height: $height-header;
+                width: 100%;
+                @include flex(justify-content, space-around);
+
+                & > li{
+                    list-style: none;
+                    line-height: $height-header;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 16px;
+                    padding: 0 10px;
+                    @include transiton();
+                    @include flex(justify-content, unset);
+
+                    & > .text{
+                        color: $color-white;
+                        position: relative;
+                        @include transiton();
+
+                        &::after{
+                            content: "";
+                            height: 2px;
+                            width: 0;
+                            background-color: black;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 0;
+                            @include transiton();
+
+                        }
+
+                        &:hover{
+                            color: black;
+                            cursor: pointer;
+                        }
+                        
+                        &:hover::after{
+                            width: 100%;
+                        }
+                    }      
+                }
+
+                & .dropDown{
+                    position: relative;
+
+                    &__list{
+                        position: absolute;
+                        top: $height-header;
+                        left: 0;
+                        z-index: 99;
+                        height: auto;
+                        width: 200px;
+                        padding: 10px;
+                        color: white;
+                        background-color: $color-primary;
+                        
+                        display: none;
+                        
+                        &--items{
+                            text-align: center;
+                            line-height: 50px;  
+                            @include transiton();
+
+                            &:hover{
+                                color: black;
+                                cursor: pointer;
+                            }
+                        }   
+                        
+                    }
+
+                    &:hover .dropDown__list{
+                        display: block;
+                    }
+                }
+            }
         }
-
-
-
     }
 }
+
+
+
+

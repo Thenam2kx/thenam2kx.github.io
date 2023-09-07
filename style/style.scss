@@ -1,7 +1,3 @@
-@import 'header.scss';
-@import 'footer.scss';
-@import 'main.scss';
-@import 'repos.scss';
 *{
     margin: 0;
     padding: 0;
@@ -14,3 +10,9 @@ body{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@import 'grid-system.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
+// @import 'repos.scss';
