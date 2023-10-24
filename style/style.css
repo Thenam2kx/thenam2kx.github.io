@@ -590,14 +590,14 @@ body {
   left: 0;
   z-index: 99;
   height: auto;
-  width: 200px;
+  width: 280px;
   padding: 10px;
   color: white;
   background-color: #2489db;
   display: none;
 }
 .header__content--menu > ul .dropDown__list--items {
-  text-align: center;
+  text-align: left;
   line-height: 50px;
   transition: all ease 0.15s;
 }
@@ -712,6 +712,11 @@ body {
 }
 .main__content__service--Web--serviceList > ul > li > .secrvice-title > h3 {
   padding-left: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: fit-content;
 }
 
 .footer {

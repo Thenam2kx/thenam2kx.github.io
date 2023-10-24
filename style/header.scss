@@ -96,7 +96,7 @@ $color-black: #0000;
                         left: 0;
                         z-index: 99;
                         height: auto;
-                        width: 200px;
+                        width: 280px;
                         padding: 10px;
                         color: white;
                         background-color: $color-primary;
@@ -104,7 +104,8 @@ $color-black: #0000;
                         display: none;
                         
                         &--items{
-                            text-align: center;
+                            // width: 500px;
+                            text-align: left;
                             line-height: 50px;  
                             @include transiton();
 
